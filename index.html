@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="static/css/mui.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+</head>
+
+
+<body>
+	
+	
+	
+	
+	<!--内容区-->
+	<div class="mui-content">
+		
+	
+	</div>
+
+	<!--侧滑导航栏-->
+	<!-- 缩放式侧滑（类手机QQ） -->
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-scalable">
+	  <!-- 菜单容器 -->
+	  <aside class="mui-off-canvas-left mui-transitioning" id="offCanvasSide">
+	    <div class="mui-scroll-wrapper">
+	      <div class="mui-scroll mui-scroll-2">
+	        <!-- 菜单具体展示内容 -->
+	        <ul>
+	        	<li>list1</li>
+	        	<li>list2</li>
+	        	<li>list3</li>
+	        </ul>
+	        
+	        
+	        
+	      </div>
+	    </div>
+	  </aside>
+	  <!-- 主页面容器 -->
+	  <div class="mui-inner-wrap mui-transitioning">
+	    <!-- 主页面标题 -->
+	    <header class="mui-bar mui-bar-nav">
+	      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+	      <h1 class="mui-title">标题</h1>
+	    </header>
+	    <nav class="mui-bar mui-bar-tab">
+		    <a class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">首页</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-phone"></span>
+		        <span class="mui-tab-label">电话</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-email"></span>
+		        <span class="mui-tab-label">邮件</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-gear"></span>
+		        <span class="mui-tab-label">设置</span>
+		    </a>
+		</nav>
+	    <div class="mui-content mui-scroll-wrapper">
+	      <div class="mui-scroll">
+	        <!-- 主界面具体展示内容 -->
+	        <!--轮播图-->
+		    <div id="slider" class="mui-slider" >
+		      <div class="mui-slider-group mui-slider-loop">
+		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		        <!-- 第一张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		        <!-- 第二张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		        <!-- 第三张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		        <!-- 第四张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="http://placehold.it/400x300">
+		          </a>
+		        </div>
+		      </div>
+		      <div class="mui-slider-indicator">
+		        <div class="mui-indicator mui-active"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		      </div>
+		    </div>
+	      	
+	      	<div class="mui-card">
+				<!--页眉，放置标题-->
+				<div class="mui-card-header">页眉</div>
+				<!--内容区-->
+				<div class="mui-card-content">内容区</div>
+				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/cbd.jpg)"></div>
+				<!--页脚，放置补充信息或支持的操作-->
+				<div class="mui-card-footer">页脚</div>
+			</div>
+	        
+	        
+	      </div>
+	    </div>  
+	    <div class="mui-off-canvas-backdrop"></div>
+	  </div>
+	</div>
+
+</body>
+
+
+    <script src="static/js/mui.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+      	
+    </script>
+    
+</html>
