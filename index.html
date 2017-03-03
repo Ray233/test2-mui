@@ -6,6 +6,8 @@
     <title></title>
     <link href="static/css/mui.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
+    <script src="static/js/mui.js"></script>
+    <script src="static/js/mui.view.js" type="text/javascript" charset="utf-8"></script>
 </head>
 
 
@@ -48,19 +50,19 @@
 	      <h1 class="mui-title">标题</h1>
 	    </header>
 	    <nav class="mui-bar mui-bar-tab">
-		    <a class="mui-tab-item mui-active">
+		    <a class="mui-tab-item mui-active" id="a1">
 		        <span class="mui-icon mui-icon-home"></span>
 		        <span class="mui-tab-label">首页</span>
 		    </a>
-		    <a class="mui-tab-item">
+		    <a class="mui-tab-item" id="a2">
 		        <span class="mui-icon mui-icon-phone"></span>
 		        <span class="mui-tab-label">电话</span>
 		    </a>
-		    <a class="mui-tab-item">
+		    <a class="mui-tab-item" id="a3">
 		        <span class="mui-icon mui-icon-email"></span>
 		        <span class="mui-tab-label">邮件</span>
 		    </a>
-		    <a class="mui-tab-item">
+		    <a class="mui-tab-item" id="a4">
 		        <span class="mui-icon mui-icon-gear"></span>
 		        <span class="mui-tab-label">设置</span>
 		    </a>
@@ -68,62 +70,55 @@
 	    <div class="mui-content mui-scroll-wrapper">
 	      <div class="mui-scroll">
 	        <!-- 主界面具体展示内容 -->
-	        <!--轮播图-->
-		    <div id="slider" class="mui-slider" >
-		      <div class="mui-slider-group mui-slider-loop">
-		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
-		        <div class="mui-slider-item mui-slider-item-duplicate">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		        <!-- 第一张 -->
-		        <div class="mui-slider-item">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		        <!-- 第二张 -->
-		        <div class="mui-slider-item">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		        <!-- 第三张 -->
-		        <div class="mui-slider-item">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		        <!-- 第四张 -->
-		        <div class="mui-slider-item">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
-		        <div class="mui-slider-item mui-slider-item-duplicate">
-		          <a href="#">
-		            <img src="http://placehold.it/400x300">
-		          </a>
-		        </div>
-		      </div>
-		      <div class="mui-slider-indicator">
-		        <div class="mui-indicator mui-active"></div>
-		        <div class="mui-indicator"></div>
-		        <div class="mui-indicator"></div>
-		        <div class="mui-indicator"></div>
-		      </div>
-		    </div>
-	      	
-	      	<div class="mui-card">
-				<!--页眉，放置标题-->
-				<div class="mui-card-header">页眉</div>
-				<!--内容区-->
-				<div class="mui-card-content">内容区</div>
-				<div class="mui-card-header mui-card-media" style="height:40vw;background-image:url(../images/cbd.jpg)"></div>
-				<!--页脚，放置补充信息或支持的操作-->
-				<div class="mui-card-footer">页脚</div>
+	        
+		    
+    		<div class="mui-content">
+			    <div id="slider" class="mui-slider" >
+			      <div class="mui-slider-group mui-slider-loop">
+			        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			        <div class="mui-slider-item mui-slider-item-duplicate">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			        <!-- 第一张 -->
+			        <div class="mui-slider-item">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			        <!-- 第二张 -->
+			        <div class="mui-slider-item">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			        <!-- 第三张 -->
+			        <div class="mui-slider-item">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			        <!-- 第四张 -->
+			        <div class="mui-slider-item">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			        <div class="mui-slider-item mui-slider-item-duplicate">
+			          <a href="#">
+			            <img src="http://placehold.it/400x300">
+			          </a>
+			        </div>
+			      </div>
+			      <div class="mui-slider-indicator">
+			        <div class="mui-indicator mui-active"></div>
+			        <div class="mui-indicator"></div>
+			        <div class="mui-indicator"></div>
+			        <div class="mui-indicator"></div>
+			      </div>
+			    </div>
 			</div>
 	        
 	        
@@ -136,9 +131,37 @@
 </body>
 
 
-    <script src="static/js/mui.js"></script>
     <script type="text/javascript" charset="utf-8">
       	mui.init();
+//    	for (var i=1;i<4;i++) {
+//    		//tap为mui封装的单击事件，可参考手势事件章节
+//    		document.getElementById('a' + i).addEventListener('tap', function() {
+//			  //打开关于页面
+//			  mui.openWindow({
+//			    url: 'views/list-' + i + '.html', 
+//			    id:'a' + i
+//			  });
+//			});
+//    	}
+//    	
+		var itema = getElementsByClassName("mui-tab-item");
+		for (var i = 0;i<iteama.length;i++) {
+			(function(n){
+				iteama[i].addEventListener('tap', function() {
+				  mui.openWindow({
+				  //打开关于页面
+				    url: 'views/list-' + i + '.html', 
+				    id:'a' + i
+				  });
+				});
+			})(i)
+		}
+      	
+      	
+      	
+      	mui.plusReady(function(){
+				console.log("当前页面的url:"+plus.webview.currentWebview().getURL());
+			})
       	
     </script>
     
