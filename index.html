@@ -144,17 +144,17 @@
 //			});
 //    	}
 //    	
-		var itema = getElementsByClassName("mui-tab-item");
-		for (var i = 0;i<iteama.length;i++) {
+		var itema = document.getElementsByClassName('mui-tab-item');
+		for (var i = 0;i<itema.length;i++) {
 			(function(n){
-				iteama[i].addEventListener('tap', function() {
+				iteama[n].addEventListener('tap', function() {
 				  mui.openWindow({
 				  //打开关于页面
-				    url: 'views/list-' + i + '.html', 
-				    id:'a' + i
+				    url: 'views/list-' + n + '.html', 
+				    id:'a' + n
 				  });
 				});
-			})(i)
+			})(n)
 		}
       	
       	
